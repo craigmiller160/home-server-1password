@@ -4,7 +4,9 @@ Integrates the 1Password Connect Service & Operator into the Kubernetes cluster.
 
 ## Repository
 
+```bash
 helm repo add 1password https://1password.github.io/connect-helm-charts
+```
 
 ## Environment Variables
 
