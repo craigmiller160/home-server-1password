@@ -1,6 +1,7 @@
 {
   "name": "@craigmiller160/1password",
   "version": "1.0.0",
+  "namespace": "infra-prod",
   "type": "application",
   "setValues": {
     "connect.operator.token.value": "$ONEPASSWORD_TOKEN",
