@@ -1,0 +1,13 @@
+apiVersion: v2
+name: 1Password
+description: A helm chart for my Kubernetes Ingress
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+dependencies:
+  - name: connect
+    version: 1.9.0
+    repository: https://1password.github.io/connect-helm-charts
+  - name: secure_ingress
+    version: 1.0.0
+    repository: https://nexus-craigmiller160.ddns.net/repository/helm-private
