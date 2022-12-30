@@ -1,5 +1,9 @@
 {
   "name": "@craigmiller160/1password",
   "version": "1.0.0",
-  "type": "application"
+  "type": "application",
+  "setValues": {
+    "connect.operator.token.value": "$ONEPASSWORD_TOKEN",
+    "connect.connect.credentials_base64": "ONEPASSWORD_CREDS_BASE64"
+  }
 }
