@@ -5,6 +5,6 @@
   "type": "application",
   "setValues": {
     "connect.operator.token.value": "$ONEPASSWORD_TOKEN",
-    "connect.connect.credentials_base64": "ONEPASSWORD_CREDS_BASE64"
+    "connect.connect.credentials_base64": "$ONEPASSWORD_CREDS_BASE64"
   }
 }
