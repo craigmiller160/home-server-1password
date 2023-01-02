@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: onepassword-ingress
+  annotations:
+    kubernetes.io/ingress.class: public
+    cert-manager.io/cluster-issuer: letsencrypt-onepassword
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    nginx.ingress.kubernetes.io/proxy-body-size: 1000m
+spec:
+  rules:
+    - host: infra-craigmiller160.ddns.net
+      http:
+        paths:
+          - path: /onepassword/(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: onepassword-connect
+                port:
+                  number: 8080
+  tls:
+    - secretName: onepassword-ingress-secret
+      hosts:
+        - infra-craigmiller160.ddns.net
