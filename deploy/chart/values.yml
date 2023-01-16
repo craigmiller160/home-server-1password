@@ -11,6 +11,3 @@ secrets:
     - name: postgres-root-account
       namespace: infra-prod
       itemPath: vaults/Home Server (Prod)/items/Postgres Root Account
-    - name: mongodb-root-account
-      namespace: infra-prod
-      itemPath: vaults/Home Server (Prod)/items/MongoDB Root Account
