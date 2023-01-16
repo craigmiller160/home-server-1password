@@ -1,6 +1,6 @@
 {
   "name": "@craigmiller160/1password",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "namespace": "infra-prod",
   "type": "application",
   "setValues": {
