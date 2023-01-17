@@ -3,11 +3,3 @@ connect:
     serviceType: ClusterIP
   operator:
     create: true
-secrets:
-  namespacePrefixes:
-    - infra
-    - apps
-  items:
-    - name: postgres-root-account
-      namespace: infra-prod
-      itemPath: vaults/Home Server (Prod)/items/Postgres Root Account
