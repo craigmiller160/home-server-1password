@@ -7,7 +7,7 @@ metadata:
     cert-manager.io/cluster-issuer: letsencrypt-onepassword
     nginx.ingress.kubernetes.io/rewrite-target: /$1
     nginx.ingress.kubernetes.io/proxy-body-size: 1000m
-    nginx.ingress.kubernetes.io/whitelist-source-range: 47.196.14.245/32
+    nginx.ingress.kubernetes.io/whitelist-source-range: 47.200.162.242/32
 spec:
   rules:
     - host: infra-craigmiller160.ddns.net
