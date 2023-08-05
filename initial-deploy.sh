@@ -3,7 +3,7 @@
 #!/bin/sh
 
 helm install \
-  cert-manager \
+  1password \
   ./deploy/chart \
   --kube-context=microk8s \
   --wait \
