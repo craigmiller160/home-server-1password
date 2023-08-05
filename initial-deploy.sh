@@ -1,6 +1,11 @@
 #!/bin/sh
 
-helm install \
+if [ $# -ne 1 ]; then
+  echo "Must provide command"
+  exit 1
+fi
+
+helm $1 \
   1password \
   ./deploy/chart \
   --kube-context=microk8s \
