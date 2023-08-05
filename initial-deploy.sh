@@ -1,7 +1,5 @@
 #!/bin/sh
 
-#!/bin/sh
-
 helm install \
   1password \
   ./deploy/chart \
