@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: public
   rules:
-    - host: infra-craigmiller160.ddns.net
+    - host: infra.craigmiller160.us
       http:
         paths:
           - path: /onepassword/(.*)
@@ -23,4 +23,4 @@ spec:
   tls:
     - secretName: onepassword-ingress-secret
       hosts:
-        - infra-craigmiller160.ddns.net
+        - infra.craigmiller160.us
